@@ -1,0 +1,129 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+body,html{
+    height: 100vh;
+    width: 100%;
+}
+.container{
+    background-color: #f6fff8;
+    font-size: 20px;
+    font-size: bold;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+.sidebar ul{
+    list-style: none;
+    display: grid;
+    
+    gap: 4px;
+}
+.sidebar > .logo{
+    display: flex;
+    align-items: center;
+    margin-bottom: 80px;
+    
+}
+.sidebar > div{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 24px;
+}
+.logo  >img {
+    justify-self: flex-start;
+    width: 100px;
+    height: 100px;
+}
+.sidebar, .main, .header{
+    border: 4px solid #9fb1a1;
+    margin: 5px;
+    border-radius: 20px;
+    padding: 40px;
+}
+.sidebar{
+    grid-row: 1 / span 5;
+    color: white;
+    background-color: #6b9080
+}
+.main *{
+    
+    border-radius: 16px;
+}
+.main{
+    
+    grid-row: 2 / span 4;
+    background-color: #ccd3d3;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 3fr 1fr;
+    gap:8px;
+    
+    
+}
+.main-headers{
+    font-weight: bold;
+    
+}
+
+.projects{
+    grid-column: 1 / 2;
+    display: grid;
+     grid-row: 1 / 3;
+    grid-template-columns: 1fr 1fr;  
+    grid-template-rows: repeat(auto-fit, minmax(150px,1fr));
+    gap:16px;
+    font-weight: 100;
+    max-height: 100%;
+}
+.heading{
+    font-weight: bold;
+}
+
+.projects > div {
+    border-left: 10px solid #109255 ;
+    border-radius: 16px;
+    padding: 20px;
+    background-color: #ffffff;
+}
+.annoucments{
+   display: flex;
+    grid-row: 1;
+    font-weight: 100;
+    grid-column: 2;
+    border: 2px solid rgb(35, 37, 35);
+    align-items: center;
+    text-align: center;
+    
+    
+}
+
+
+
+.trending{
+    display: flex;
+    
+    align-items: center;
+    text-align: center;
+    grid-row: 2;
+    font-weight: 100;
+    grid-column: 2;
+    border: 2px solid rgb(35, 37, 35);
+    
+    
+    
+}
+
+   
+   
+
+.header{
+    grid-row: 1;
+    background-color: #a4c3b2
+}
+.list-space{
+    height: 100px;;
+}
